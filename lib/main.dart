@@ -31,57 +31,68 @@ class _HomeState extends State<Home> {
         ],
       ),
       backgroundColor: Colors.white,
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: <Widget>[
-          Icon(
-            Icons.person_outline,
-            size: 120.0,
-            color: Colors.purple,
-          ),
-          TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: 'Peso (Kg)',
-              labelStyle: TextStyle(
-                color: Colors.purple,
-              ),
-            ),
-            textAlign: TextAlign.center,
-            style: TextStyle(
+      body: SingleChildScrollView(
+        padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Icon(
+              Icons.person_outline,
+              size: 120.0,
               color: Colors.purple,
-              fontSize: 25.0,
             ),
-          ),
-          TextField(
-            keyboardType: TextInputType.number,
-            decoration: InputDecoration(
-              labelText: 'Altura (cm)',
-              labelStyle: TextStyle(
-                color: Colors.purple,
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: 'Peso (Kg)',
+                labelStyle: TextStyle(
+                  color: Colors.purple,
+                ),
               ),
-            ),
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              color: Colors.purple,
-              fontSize: 25.0,
-            ),
-          ),
-          Container(
-            height: 50.0,
-            child: RaisedButton(
-            onPressed: () => print('Não me aperte com força!!!'),
-            child: Text(
-              'Calcular',
+              textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.purple,
                 fontSize: 25.0,
               ),
             ),
-            color: Colors.purple,
-          )
-          ),
-        ],
+            TextField(
+              keyboardType: TextInputType.number,
+              decoration: InputDecoration(
+                labelText: 'Altura (cm)',
+                labelStyle: TextStyle(
+                  color: Colors.purple,
+                ),
+              ),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.purple,
+                fontSize: 25.0,
+              ),
+            ),
+            Container(
+              height: 50.0,
+              child: RaisedButton(
+                onPressed: () => print('Não me aperte com força!!!'),
+                child: Text(
+                  'Calcular',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25.0,
+                  ),
+                ),
+                color: Colors.purple,
+              ),
+            ),
+            Text(
+              'Info',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.purple,
+                fontSize: 25.0,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
