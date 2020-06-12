@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
           'Calculadora de IMC',
         ),
         centerTitle: true,
-        backgroundColor: Colors.cyan[600],
+        backgroundColor: Colors.purple[600],
         actions: <Widget>[
           IconButton(
             icon: Icon(
@@ -37,19 +37,19 @@ class _HomeState extends State<Home> {
           Icon(
             Icons.person_outline,
             size: 120.0,
-            color: Colors.cyan,
+            color: Colors.purple,
           ),
           TextField(
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
               labelText: 'Peso (Kg)',
               labelStyle: TextStyle(
-                color: Colors.cyan,
+                color: Colors.purple,
               ),
             ),
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.cyan,
+              color: Colors.purple,
               fontSize: 25.0,
             ),
           ),
@@ -58,14 +58,28 @@ class _HomeState extends State<Home> {
             decoration: InputDecoration(
               labelText: 'Altura (cm)',
               labelStyle: TextStyle(
-                color: Colors.cyan,
+                color: Colors.purple,
               ),
             ),
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.cyan,
+              color: Colors.purple,
               fontSize: 25.0,
             ),
+          ),
+          Container(
+            height: 50.0,
+            child: RaisedButton(
+            onPressed: () => print('Não me aperte com força!!!'),
+            child: Text(
+              'Calcular',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 25.0,
+              ),
+            ),
+            color: Colors.purple,
+          )
           ),
         ],
       ),
