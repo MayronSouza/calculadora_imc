@@ -69,18 +69,24 @@ class _HomeState extends State<Home> {
                 fontSize: 25.0,
               ),
             ),
-            Container(
-              height: 50.0,
-              child: RaisedButton(
-                onPressed: () => print('Não me aperte com força!!!'),
-                child: Text(
-                  'Calcular',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 25.0,
+            Padding(
+              padding: EdgeInsets.only(
+                top: 10.0,
+                bottom: 10.0,
+              ),
+              child: Container(
+                height: 50.0,
+                child: RaisedButton(
+                  onPressed: () => print('Não me aperte com força!!!'),
+                  child: Text(
+                    'Calcular',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 25.0,
+                    ),
                   ),
+                  color: Colors.purple,
                 ),
-                color: Colors.purple,
               ),
             ),
             Text(
